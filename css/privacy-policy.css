@@ -1,0 +1,58 @@
+.page-hero{padding:100px 20px 60px;background:var(--surface-alt);border-bottom:1px solid var(--border)}.page-hero h1{max-width:900px;margin:12px auto;color:var(--brand-blue);font-size:clamp(2.5rem,5vw,4.6rem);line-height:1.02;text-align:center}.page-hero p{text-align:center;max-width:720px;margin:0 auto;color:var(--muted);line-height:1.8}.legal-grid{display:grid;gap:18px;max-width:900px;margin:auto}.legal-card{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:28px;transition:transform var(--transition),border-color var(--transition),box-shadow var(--transition)}.legal-card:hover{transform:translateY(-4px);border-color:var(--brand-gold);box-shadow:var(--shadow)}.legal-card h2{margin:0 0 10px;color:var(--text);font-size:1.3rem}.legal-card p,.legal-card li{color:var(--muted);line-height:1.8}.legal-card ul{padding-left:20px}.status-panel{text-align:center;max-width:760px;margin:auto;padding:54px 28px;background:var(--surface);border:1px solid var(--border);border-radius:28px;box-shadow:var(--shadow)}.status-panel .status-icon{width:64px;height:64px;margin:0 auto 18px;display:grid;place-items:center;border-radius:50%;background:var(--brand-gold);color:var(--brand-blue)}.status-panel h1{margin:0 0 12px;color:var(--text)}.status-panel p{color:var(--muted);line-height:1.8}html.dark .page-hero{background:var(--dark-bg);border-color:var(--dark-border)}html.dark .page-hero h1{color:var(--dark-text)}html.dark .page-hero p{color:var(--dark-muted)}html.dark .legal-card,html.dark .status-panel{background:var(--dark-surface-2);border-color:var(--dark-border);box-shadow:none}html.dark .legal-card h2,html.dark .status-panel h1{color:var(--dark-text)}html.dark .legal-card p,html.dark .legal-card li,html.dark .status-panel p{color:var(--dark-muted)}@media(max-width:768px){.page-hero{padding:72px 20px 48px}.legal-card{padding:22px}}
+main{padding-bottom:80px}
+
+/* Add breathing room between hero and legal cards */
+main > .section .legal-grid{padding-top:34px;}
+@media(max-width:768px){main > .section .legal-grid{padding-top:24px;}}
+
+/* Requested small eyebrow/tagline text and icon color */
+.eyebrow,.eyebrow svg,.eyebrow i{color:var(--brand-gold)!important}.eyebrow svg{stroke:var(--brand-gold)!important}
+
+
+/* Modern ComfortStep wordmark typography */
+.logo-name,
+.logo-text,
+.brand-name,
+.brand-text,
+.site-logo-text,
+.logo-content .brand-name,
+.logo-content .logo-name,
+.logo-wrapper .brand-name,
+.logo-wrapper .logo-name,
+header .logo-name,
+footer .logo-name {
+    font-family: "Trebuchet MS", "Avenir Next", Avenir, Montserrat, Arial, sans-serif !important;
+    font-weight: 800 !important;
+    font-style: normal !important;
+    letter-spacing: -0.6px !important;
+    text-shadow: none !important;
+    -webkit-text-stroke: 0 !important;
+    text-stroke: 0 !important;
+}
+
+/* Requested RTL logo order */
+[dir="rtl"] .logo,
+[dir="rtl"] .brand,
+[dir="rtl"] .site-logo,
+[dir="rtl"] .logo-link {
+  flex-direction: row-reverse !important;
+}
+[dir="rtl"] .logo img,
+[dir="rtl"] .brand img,
+[dir="rtl"] .site-logo img {
+  order: 2 !important;
+}
+[dir="rtl"] .logo .logo-name,
+[dir="rtl"] .brand .logo-name,
+[dir="rtl"] .site-logo .logo-name {
+  order: 1 !important;
+}
+
+/* FAQ expanded state */
+.faq-question.active::after,
+.faq-question[aria-expanded="true"]::after,
+.faq-toggle.active::after,
+.faq-toggle[aria-expanded="true"]::after,
+.accordion-button:not(.collapsed)::after {
+  content: "−" !important;
+}

@@ -1,0 +1,278 @@
+.site-footer{background:var(--surface-alt);border-top:1px solid var(--border);color:var(--text);transition:background var(--transition),color var(--transition),border-color var(--transition)}
+.footer-main{max-width:var(--max);margin:auto;padding:58px 20px 34px;display:grid;grid-template-columns:1.35fr 1fr 1fr 1.15fr;gap:40px}
+.footer-brand .brand{margin-bottom:14px}.footer-brand p{max-width:320px;color:var(--muted);font-size:.9rem;line-height:1.8}
+.footer-title{font-size:.92rem;font-weight:800;margin:0 0 15px;color:var(--text)}
+.footer-links{display:grid;gap:10px}.footer-links a{color:var(--muted);text-decoration:none;font-size:.88rem;transition:color var(--transition),transform var(--transition)}.footer-links a:hover{color:var(--brand-gold);transform:translateX(3px)}
+.visit-list{display:grid;gap:12px}.visit-item{display:flex;gap:9px;align-items:flex-start;color:var(--muted);font-size:.88rem;line-height:1.55}.visit-item svg{width:18px;height:18px;flex:none;color:var(--brand-teal);margin-top:2px}
+.socials{display:flex;gap:9px;margin-top:17px}.socials a{width:38px;height:38px;border:1px solid var(--border);border-radius:50%;display:grid;place-items:center;color:var(--brand-teal);text-decoration:none;transition:all var(--transition)}.socials a:hover{background:var(--brand-gold);border-color:var(--brand-gold);color:var(--brand-blue);transform:translateY(-3px)}
+.footer-bottom{max-width:var(--max);margin:auto;padding:18px 20px;border-top:1px solid var(--border);display:flex;justify-content:space-between;gap:20px;color:var(--muted);font-size:.88rem}
+html.dark .site-footer{background:var(--dark-surface);border-color:var(--dark-border);color:var(--dark-text)}
+html.dark .footer-title{color:var(--dark-text)}html.dark .footer-brand p,html.dark .footer-links a,html.dark .visit-item,html.dark .footer-bottom{color:var(--dark-muted)}
+html.dark .socials a{border-color:var(--dark-border);color:var(--brand-gold)}
+@media(max-width:768px){.footer-main{grid-template-columns:1fr 1fr;gap:30px}.footer-brand{grid-column:1/-1}}
+@media(max-width:360px){.footer-main{grid-template-columns:1fr;padding:42px 16px 26px}.footer-bottom{padding:15px 16px;flex-direction:column;gap:7px}.footer-brand{grid-column:auto}}
+
+/* Card and interaction polish */
+.footer-brand .brand-mark{width:50px;height:40px;transform:none!important}.footer-brand .brand-name{font-size:1.35rem
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+}.footer-brand .footwear-logo{transform:none!important;transition:none!important}
+
+.site-footer .brand{direction:ltr!important}.footer-bottom{justify-content:flex-start!important}.footer-bottom span{font-size:.88rem;font-weight:500;color:var(--muted)}
+html.dark .footer-bottom span{color:var(--dark-muted)}
+
+.footer-bottom{align-items:center}.footer-legal{margin-left:auto;display:flex;gap:18px;align-items:center}.footer-legal a{color:var(--muted);text-decoration:none;font-size:.88rem;transition:color var(--transition)}.footer-legal a:hover{color:var(--brand-gold)}html.dark .footer-legal a{color:var(--dark-muted)}@media(max-width:600px){.footer-bottom{flex-direction:column;align-items:flex-start}.footer-legal{margin-left:0;flex-wrap:wrap;gap:12px}}
+
+html.dark .socials a:hover{background:var(--brand-blue);border-color:var(--brand-blue);color:#fff!important}
+
+/* Latest footer refinements */
+.socials a:hover,.socials a:focus-visible{color:#fff!important;}
+.footer-bottom{justify-content:flex-start!important;}
+.footer-bottom span{color:var(--muted);}
+html.dark .footer-bottom span{color:var(--dark-muted);}
+
+/* New generated ComfortStep logo: same dimensions in header and footer */
+.comfortstep-new-logo{width:220px;height:auto;display:block;object-fit:contain;flex:none;}
+@media(max-width:768px){.comfortstep-new-logo{width:185px;}}
+@media(max-width:360px){.comfortstep-new-logo{width:165px;}}
+
+html[dir="rtl"] .site-footer .comfortstep-new-logo{content:url("../comfortstep-new-logo-rtl.png");}
+
+
+/* Modern ComfortStep wordmark typography */
+.logo-name,
+.logo-text,
+.brand-name,
+.brand-text,
+.site-logo-text,
+.logo-content .brand-name,
+.logo-content .logo-name,
+.logo-wrapper .brand-name,
+.logo-wrapper .logo-name,
+header .logo-name,
+footer .logo-name {
+    font-family: "Trebuchet MS", "Avenir Next", Avenir, Montserrat, Arial, sans-serif !important;
+    font-weight: 800 !important;
+    font-style: normal !important;
+    letter-spacing: -0.6px !important;
+    text-shadow: none !important;
+    -webkit-text-stroke: 0 !important;
+    text-stroke: 0 !important;
+}
+
+/* RTL footer logo order: wordmark on left, footwear mark on right */
+html[dir="rtl"] .site-footer .comfortstep-new-logo{content:url("../comfortstep-new-logo-rtl.png")!important;}
+
+/* Requested RTL logo order */
+[dir="rtl"] .logo,
+[dir="rtl"] .brand,
+[dir="rtl"] .site-logo,
+[dir="rtl"] .logo-link {
+  flex-direction: row-reverse !important;
+}
+[dir="rtl"] .logo img,
+[dir="rtl"] .brand img,
+[dir="rtl"] .site-logo img {
+  order: 2 !important;
+}
+[dir="rtl"] .logo .logo-name,
+[dir="rtl"] .brand .logo-name,
+[dir="rtl"] .site-logo .logo-name {
+  order: 1 !important;
+}
+
+/* FAQ expanded state */
+.faq-question.active::after,
+.faq-question[aria-expanded="true"]::after,
+.faq-toggle.active::after,
+.faq-toggle[aria-expanded="true"]::after,
+.accordion-button:not(.collapsed)::after {
+  content: "−" !important;
+}
+
+
+/* FINAL REQUESTED BRAND UPDATE: symbol-only logo + separate modern wordmark */
+.site-footer .brand{direction:ltr!important;display:inline-flex!important;align-items:center!important;flex-direction:row!important;gap:10px!important;}
+.site-footer .comfortstep-new-logo{content:url("../comfortstep-logo-only.png")!important;width:50px!important;height:50px!important;object-fit:contain!important;display:block!important;flex:none!important;}
+.site-footer .brand-name{font-family:"Inter","Avenir Next",Avenir,Montserrat,Arial,sans-serif!important;font-size:1.35rem!important;font-weight:800!important;font-style:normal!important;letter-spacing:-.045em!important;line-height:1!important;display:inline-flex!important;align-items:baseline!important;white-space:nowrap!important;text-shadow:none!important;-webkit-text-stroke:0!important;text-stroke:0!important;}
+.site-footer .brand-comfort{color:#145C6E!important;}
+.site-footer .brand-step-text{color:var(--brand-gold)!important;}
+html.dark .site-footer .brand-comfort{color:#145C6E!important;}
+html.dark .site-footer .brand-step-text{color:var(--brand-gold)!important;}
+html[dir="rtl"] .site-footer .brand{direction:ltr!important;flex-direction:row-reverse!important;}
+html[dir="rtl"] .site-footer .brand .comfortstep-new-logo{order:2!important;content:url("../comfortstep-logo-only.png")!important;}
+html[dir="rtl"] .site-footer .brand .brand-name{order:1!important;}
+@media(max-width:768px){.site-footer .comfortstep-new-logo{width:44px!important;height:44px!important;}.site-footer .brand-name{font-size:1.2rem!important;}}
+@media(max-width:360px){.site-footer .comfortstep-new-logo{width:40px!important;height:40px!important;}.site-footer .brand-name{font-size:1.08rem!important;}}
+
+/* FINAL HEADER/FOOTER WORDMARK SYNC */
+.site-footer .brand .brand-name {
+  font-family: "Inter", "Avenir Next", Avenir, Montserrat, Arial, sans-serif !important;
+  font-size: 1.35rem !important;
+  font-weight: 800 !important;
+  font-style: normal !important;
+  letter-spacing: -0.045em !important;
+  line-height: 1 !important;
+  display: inline-flex !important;
+  align-items: baseline !important;
+  white-space: nowrap !important;
+}
+.site-footer .brand .brand-comfort { color: #145C6E !important; }
+.site-footer .brand .brand-step-text { color: var(--brand-gold) !important; }
+.site-footer .brand .comfortstep-new-logo {
+  width: 50px !important;
+  height: 50px !important;
+  object-fit: contain !important;
+  flex: none !important;
+}
+@media (max-width: 768px) {
+  .site-footer .brand .brand-name { font-size: 1.2rem !important; }
+  .site-footer .brand .comfortstep-new-logo { width: 44px !important; height: 44px !important; }
+}
+@media (max-width: 360px) {
+  .site-footer .brand .brand-name { font-size: 1.08rem !important; }
+  .site-footer .brand .comfortstep-new-logo { width: 40px !important; height: 40px !important; }
+}
+
+/* FINAL FOOTER BRAND STATE — same requested logo swap/order */
+html[dir="ltr"] .site-footer .brand,
+html:not([dir="rtl"]) .site-footer .brand {
+  direction: ltr !important;
+  flex-direction: row !important;
+}
+html[dir="ltr"] .site-footer .brand .comfortstep-new-logo,
+html:not([dir="rtl"]) .site-footer .brand .comfortstep-new-logo {
+  content: url("../comfortstep-new-logo-rtl.png") !important;
+  order: 1 !important;
+}
+html[dir="ltr"] .site-footer .brand .brand-name,
+html:not([dir="rtl"]) .site-footer .brand .brand-name {
+  order: 2 !important;
+}
+html[dir="rtl"] .site-footer .brand {
+  direction: ltr !important;
+  flex-direction: row-reverse !important;
+}
+html[dir="rtl"] .site-footer .brand .brand-name {
+  order: 1 !important;
+}
+html[dir="rtl"] .site-footer .brand .comfortstep-new-logo {
+  content: url("../comfortstep-new-logo.png") !important;
+  order: 2 !important;
+}
+
+/* USER REQUESTED FOOTER BRANDING — exact same as header
+   LTR: footwear symbol -> ComfortStep
+   RTL: ComfortStep -> the exact same footwear symbol
+   The image itself is symbol-only. */
+.site-footer .brand {
+  direction: ltr !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  flex-direction: row !important;
+  gap: 10px !important;
+}
+.site-footer .brand .comfortstep-new-logo {
+  content: url("../comfortstep-footwear-symbol.png") !important;
+  order: 1 !important;
+}
+.site-footer .brand .brand-name {
+  order: 2 !important;
+}
+html[dir="rtl"] .site-footer .brand {
+  direction: ltr !important;
+  flex-direction: row-reverse !important;
+}
+html[dir="rtl"] .site-footer .brand .brand-name {
+  order: 1 !important;
+}
+html[dir="rtl"] .site-footer .brand .comfortstep-new-logo {
+  content: url("../comfortstep-footwear-symbol.png") !important;
+  order: 2 !important;
+}
+
+
+/* FINAL FOOTER LOGO — use the exact same symbol-only asset as the header.
+   LTR: footwear symbol -> ComfortStep
+   RTL: ComfortStep -> footwear symbol */
+.site-footer .brand .footer-logo-symbol {
+  content: url("../comfortstep-footwear-symbol.png") !important;
+  width: 50px !important;
+  height: 50px !important;
+  object-fit: contain !important;
+  display: block !important;
+  flex: 0 0 50px !important;
+  order: 1 !important;
+}
+.site-footer .brand {
+  direction: ltr !important;
+  display: inline-flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: 10px !important;
+}
+.site-footer .brand .brand-name { order: 2 !important; }
+html[dir="rtl"] .site-footer .brand {
+  direction: ltr !important;
+  flex-direction: row-reverse !important;
+}
+html[dir="rtl"] .site-footer .brand .brand-name { order: 1 !important; }
+html[dir="rtl"] .site-footer .brand .footer-logo-symbol {
+  order: 2 !important;
+  content: url("../comfortstep-footwear-symbol.png") !important;
+}
+@media (max-width: 768px) {
+  .site-footer .brand .footer-logo-symbol {
+    width: 44px !important;
+    height: 44px !important;
+    flex-basis: 44px !important;
+  }
+}
+@media (max-width: 360px) {
+  .site-footer .brand .footer-logo-symbol {
+    width: 40px !important;
+    height: 40px !important;
+    flex-basis: 40px !important;
+  }
+}
+
+/* FINAL FOOTER RTL BRANDING — match the header exactly
+   LTR: footwear symbol -> ComfortStep
+   RTL: ComfortStep -> footwear symbol
+   The footer uses the same symbol-only image as the header. */
+.site-footer .brand {
+  direction: ltr !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  flex-direction: row !important;
+  gap: 10px !important;
+}
+.site-footer .brand .footer-logo-symbol {
+  content: none !important;
+  width: 50px !important;
+  height: 50px !important;
+  object-fit: contain !important;
+  display: block !important;
+  flex: none !important;
+  order: 1 !important;
+}
+.site-footer .brand .brand-name {
+  order: 2 !important;
+}
+html[dir="rtl"] .site-footer .brand {
+  direction: ltr !important;
+  flex-direction: row !important;
+}
+html[dir="rtl"] .site-footer .brand .brand-name {
+  order: 1 !important;
+}
+html[dir="rtl"] .site-footer .brand .footer-logo-symbol {
+  order: 2 !important;
+}
+@media (max-width: 768px) {
+  .site-footer .brand .footer-logo-symbol { width: 44px !important; height: 44px !important; }
+}
+@media (max-width: 360px) {
+  .site-footer .brand .footer-logo-symbol { width: 40px !important; height: 40px !important; }
+}

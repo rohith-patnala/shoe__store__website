@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <title>Products | ComfortStep</title>
+    <link href="favicon.png?v=6" rel="icon" type="image/png" />
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link href="css/variables.css" rel="stylesheet" />
+    <link href="css/header.css" rel="stylesheet" />
+    <link href="css/footer.css" rel="stylesheet" />
+    <link href="css/products.css" rel="stylesheet" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+    </link>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a aria-label="ComfortStep Home" class="brand" href="index.html"><img alt="ComfortStep logo"
+                    class="comfortstep-new-logo" src="comfortstep-footwear-symbol.png" /><span class="brand-name"><span
+                        class="brand-comfort">Comfort</span><span class="brand-step-text">Step</span></span></a>
+            <nav aria-label="Main navigation" class="nav" id="mainNav">
+                <div class="nav-item" id="homeNavItem">
+                    <a class="nav-link home-toggle" href="index.html" id="homeToggle">Home <i class="chevron"
+                            data-lucide="chevron-down"></i></a>
+                    <div class="dropdown"><a href="index.html">Home 1</a><a href="home-2.html">Home 2</a></div>
+                </div>
+                <div class="nav-item"><a class="nav-link" href="products.html">Products</a></div>
+                <div class="nav-item"><a class="nav-link" href="consultation.html">Consultation</a></div>
+                <div class="nav-item"><a class="nav-link" href="insurance.html">Insurance</a></div>
+                <div class="nav-item"><a class="nav-link" href="contact.html">Contact</a></div>
+            </nav>
+            <div class="header-actions">
+                <button aria-label="Switch to RTL" class="icon-btn" id="rtlToggle" title="RTL"><span
+                        class="direction-label">RTL</span></button>
+                <button aria-label="Switch to dark mode" class="icon-btn" id="themeToggle" title="Dark mode"><i
+                        data-lucide="moon-star"></i></button>
+                <a class="header-cta" href="booking.html">Book Now <i data-lucide="arrow-up-right"></i></a>
+                <button aria-label="Open menu" class="mobile-toggle" id="mobileToggle"><i
+                        data-lucide="menu"></i></button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero" data-aos="fade-up" data-aos-duration="850"
+            style="background-image:url(https://i.pinimg.com/1200x/8d/83/a3/8d83a3eada63a514c4fd080e1bb6546d.jpg)">
+            <div class="hero-content reveal"><span class="eyebrow"><i data-lucide="shopping-bag"></i> ComfortStep
+                    Collection</span>
+                <h1>Our <span>Products.</span></h1>
+                <p>Comfort, support and practical fit options for different routines and foot-care needs. Compare
+                    comfort-focused styles by condition, fit and everyday routine before choosing your next pair.</p>
+                <div class="hero-actions"><a class="btn" href="#filters">View Products</a></div>
+            </div>
+        </section>
+        <section class="section" data-aos="fade-right" data-aos-duration="850" id="filters">
+            <div class="site-container">
+                <div class="section-head reveal"><span class="eyebrow"><i data-lucide="sliders-horizontal"></i> Explore
+                        by Need</span>
+                    <h2>Find a Better-Matched Pair</h2>
+                    <p>Filter the collection by the comfort need you want to prioritize.</p>
+                </div>
+                <div class="filter-row"><button class="btn filter-btn active" data-filter="all">All</button><button
+                        class="btn filter-btn" data-filter="plantar">Plantar Fasciitis</button><button
+                        class="btn filter-btn" data-filter="diabetic">Diabetic</button><button class="btn filter-btn"
+                        data-filter="wide">Wide Fit</button></div>
+                <div class="grid-3 explore-need-cards">
+                    <article class="card product-card reveal" data-category="plantar">
+                        <div class="card-media"><img alt="Orthopedic Walking Shoe"
+                                src="https://i.pinimg.com/1200x/0e/bf/49/0ebf49b73f6742e8317b85f5b1bcf244.jpg" />
+                        </div>
+                        <div class="card-body">
+                            <h3>Orthopedic Walking Shoe</h3>
+                            <p>₹89.00 · Cushioned daily walker. This option is worth comparing for fit, cushioning and
+                                everyday use.</p><a class="btn" href="booking.html">View Details</a>
+                        </div>
+                    </article>
+                    <article class="card product-card reveal" data-category="plantar">
+                        <div class="card-media"><img alt="Comfort Sneaker"
+                                src="https://i.pinimg.com/1200x/20/1e/7a/201e7a0500aba2d7334dfb45bddf1f81.jpg" />
+                        </div>
+                        <div class="card-body">
+                            <h3>Comfort Sneaker</h3>
+                            <p>₹79.00 · Flexible everyday fit. This option is worth comparing for fit, cushioning and
+                                everyday use.</p><a class="btn" href="booking.html">View Details</a>
+                        </div>
+                    </article>
+                    <article class="card product-card reveal" data-category="diabetic">
+                        <div class="card-media"><img alt="Diabetic Shoe"
+                                src="https://i.pinimg.com/1200x/a7/3f/94/a73f946ba7134515b229622432c615fb.jpg" />
+                        </div>
+                        <div class="card-body">
+                            <h3>Diabetic Shoe</h3>
+                            <p>₹99.00 · Roomier comfort profile. This option is worth comparing for fit, cushioning and
+                                everyday use.</p><a class="btn" href="booking.html">View Details</a>
+                        </div>
+                    </article>
+                    <article class="card product-card reveal" data-category="wide">
+                        <div class="card-media"><img alt="Wide Fit Sneaker"
+                                src="https://i.pinimg.com/736x/02/7c/80/027c80f50166473b0bfe3eeb093cc6b0.jpg" />
+                        </div>
+                        <div class="card-body">
+                            <h3>Wide Fit Sneaker</h3>
+                            <p>₹74.00 · Extra-room everyday style. This option is worth comparing for fit, cushioning
+                                and everyday use.</p><a class="btn" href="booking.html">View Details</a>
+                        </div>
+                    </article>
+                    <article class="card product-card reveal" data-category="wide">
+                        <div class="card-media"><img alt="Orthopedic Boot"
+                                src="https://i.pinimg.com/1200x/fc/86/80/fc86802536b942a3e9d3913379b9ee59.jpg" />
+                        </div>
+                        <div class="card-body">
+                            <h3>Orthopedic Boot</h3>
+                            <p>₹99.00 · Stable seasonal support. This option is worth comparing for fit, cushioning and
+                                everyday use.</p><a class="btn" href="booking.html">View Details</a>
+                        </div>
+                    </article>
+                    <article class="card product-card reveal" data-category="plantar">
+                        <div class="card-media"><img alt="Casual Comfort Shoe"
+                                src="https://i.pinimg.com/1200x/a4/80/67/a480678117e4358452ed52d2e1340d09.jpg" />
+                        </div>
+                        <div class="card-body">
+                            <h3>Casual Comfort Shoe</h3>
+                            <p>₹69.00 · Relaxed daily walking. This option is worth comparing for fit, cushioning and
+                                everyday use.</p><a class="btn" href="booking.html">View Details</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="section" data-aos="zoom-in" data-aos-duration="850" id="conditions">
+            <div class="site-container image-split">
+                <div class="copy reveal"><span class="eyebrow"><i data-lucide="stethoscope"></i> Condition Guide</span>
+                    <h2>Choose by the Comfort Challenge</h2>
+                    <p>Different routines and foot needs can benefit from different footwear characteristics.</p>
+                    <div class="check-list">
+                        <div id="plantar"><i data-lucide="check-circle-2"></i> Plantar fasciitis: cushioning and
+                            supportive feel</div>
+                        <div id="diabetic"><i data-lucide="check-circle-2"></i> Diabetic needs: roomy and gentle
+                            profiles</div>
+                        <div id="wide"><i data-lucide="check-circle-2"></i> Wide fit: more forefoot space</div>
+                    </div>
+                </div>
+                <div><img alt="Foot care consultation"
+                        src="https://i.pinimg.com/1200x/b1/0f/51/b10f51992a73f587a7fd92a5804a1a23.jpg" />
+                </div>
+            </div>
+        </section>
+        <section class="section alt" data-aos="fade-up" data-aos-duration="850">
+            <div class="site-container">
+                <div class="section-head reveal"><span class="eyebrow"><i data-lucide="layers"></i> Materials &amp;
+                        Features</span>
+                    <h2>What to Look For</h2>
+                </div>
+                <div class="grid-4">
+                    <article class="card card-body reveal"><i data-lucide="wind"></i>
+                        <h3>Breathable Uppers</h3>
+                        <p>Useful for people who prefer airflow. A practical detail to consider when comparing comfort,
+                            fit and everyday use.</p>
+                    </article>
+                    <article class="card card-body reveal"><i data-lucide="feather"></i>
+                        <h3>Cushioned Footbeds</h3>
+                        <p>Soft underfoot comfort for walking. A practical detail to consider when comparing comfort,
+                            fit and everyday use.</p>
+                    </article>
+                    <article class="card card-body reveal"><i data-lucide="maximize-2"></i>
+                        <h3>Roomy Toe Space</h3>
+                        <p>More forefoot room for a relaxed fit. A practical detail to consider when comparing comfort,
+                            fit and everyday use.</p>
+                    </article>
+                    <article class="card card-body reveal"><i data-lucide="grip-horizontal"></i>
+                        <h3>Stable Soles</h3>
+                        <p>Consider traction and stability. A practical detail to consider when comparing comfort, fit
+                            and everyday use.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="section" data-aos="zoom-in" data-aos-duration="850">
+            <div class="site-container">
+                <!-- <div class="section-head reveal"><span class="eyebrow">A Quick Snapshot</span>
+                    <h2>Built Around Everyday Comfort</h2>
+                    <p>Compare the range at a glance, then explore individual products or arrange a fitting
+                        consultation.</p>
+                </div> -->
+                <div class="section-head reveal"><span class="eyebrow">At a Glance</span>
+                    <h2>Comfort Made Easier to Compare</h2>
+                    <p>A simple snapshot of the collection, comfort categories and fitting support available.</p>
+                </div>
+                <div class="stats">
+                    <div class="stat reveal"><strong>6+</strong><span>Core styles</span></div>
+                    <div class="stat reveal"><strong>4</strong><span>Comfort categories</span></div>
+                    <div class="stat reveal"><strong>1:1</strong><span>Fitting support</span></div>
+                    <div class="stat reveal"><strong>6d</strong><span>Store availability</span></div>
+                </div>
+            </div>
+        </section>
+        <section class="section alt process-section" data-aos="fade-right" data-aos-duration="850" id="process">
+            <div class="site-container">
+                <div class="section-head reveal">
+                    <span class="eyebrow"><i data-lucide="route"></i> Our Process</span>
+                    <h2>A Simple Way to Find the Right Pair</h2>
+                    <p>Move from understanding your needs to comparing supportive footwear with a clear, practical
+                        process.</p>
+                </div>
+                <div class="grid-3">
+                    <article class="card card-body reveal"><i data-lucide="clipboard-list"></i>
+                        <h3>1. Understand Your Needs</h3>
+                        <p>Share your daily routine, comfort priorities, fit concerns and the situations where your
+                            footwear needs to perform.</p>
+                    </article>
+                    <article class="card card-body reveal"><i data-lucide="scan-search"></i>
+                        <h3>2. Compare Suitable Options</h3>
+                        <p>Review footwear by condition, width, cushioning, stability and everyday use so the choices
+                            feel easier to compare.</p>
+                    </article>
+                    <article class="card card-body reveal"><i data-lucide="badge-check"></i>
+                        <h3>3. Choose With Confidence</h3>
+                        <p>Shortlist the options that match your needs, then arrange a fitting consultation when you
+                            want more personalized guidance.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="section cta-section cta-style-a" data-aos="fade-up" data-aos-duration="850">
+            <div class="site-container">
+                <div class="cta-inner reveal"><span class="eyebrow"><i data-lucide="calendar-days"></i> Collection
+                        Support</span>
+                    <h2>Find Your Next Comfortable Pair</h2>
+                    <p class="cta-tagline">Compare supportive options with a clearer plan.</p>
+                    <p>Browse the collection or schedule a consultation for personalized guidance.</p><a class="btn"
+                        href="booking.html">Book Consultation <i data-lucide="arrow-up-right"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-main">
+            <div class="footer-brand">
+                <a aria-label="ComfortStep Home" class="brand" href="index.html"><img class="footer-logo-symbol" src="comfortstep-footwear-symbol.png" alt="ComfortStep logo"><span
+                        class="brand-name"><span class="brand-comfort">Comfort</span><span
+                            class="brand-step-text">Step</span></span></a>
+                <p>Supportive footwear designed around comfort, fit and everyday mobility, with guidance for different
+                    foot-care needs.</p>
+                <div aria-label="Social media" class="socials">
+                    <a aria-label="WhatsApp" href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a aria-label="Instagram" href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a aria-label="Facebook" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a aria-label="Twitter" href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+            <div>
+                <h3 class="footer-title">Quick Links</h3>
+                <div class="footer-links"><a href="index.html">Home</a><a href="products.html">Products</a><a
+                        href="consultation.html">Consultation</a><a href="insurance.html">Insurance</a><a
+                        href="contact.html">Contact</a></div>
+            </div>
+            <div>
+                <h3 class="footer-title">Information</h3>
+                <div class="footer-links"><a href="index.html#about">About Us</a><a href="404.html">404 Page</a><a
+                        href="maintenance.html">Maintenance</a><a href="privacy-policy.html">Privacy Policy</a><a
+                        href="terms-conditions.html">Terms &amp; Conditions</a></div>
+            </div>
+            <div>
+                <h3 class="footer-title">Visit Us</h3>
+                <div class="visit-list">
+                    <div class="visit-item"><i data-lucide="map-pin"></i><span>123 Wellness Drive, Your City, ST
+                            12345</span></div>
+                    <div class="visit-item"><i data-lucide="phone"></i><span>+1 (555) 123-4567</span></div>
+                    <div class="visit-item"><i data-lucide="mail"></i><span>info@comfortstep.com</span></div>
+                    <div class="visit-item"><i data-lucide="clock-3"></i><span>Mon - Sat: 9:00 AM - 6:00 PM</span></div>
+                    <div class="visit-item"><i data-lucide="calendar-check-2"></i><span>Consultations by
+                            appointment</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom"><span>© 2026 ComfortStep  •  All rights reserved.</span><span class="footer-legal"><a
+                    href="privacy-policy.html">Privacy Policy</a><a href="terms-conditions.html">Terms &amp;
+                    Conditions</a></span></div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
