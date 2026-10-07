@@ -628,7 +628,8 @@ html.dark .stat:hover {
 }
 
 .story-card h3 {
-  margin-top: 12px
+  margin-top: 12px;
+  color: var(--brand-teal) !important
 }
 
 /* CTA spacing */

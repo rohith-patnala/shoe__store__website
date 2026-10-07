@@ -1,0 +1,100 @@
+
+.about-container{width:min(var(--max),calc(100% - 40px));margin:0 auto}
+.section-padding{padding:92px 0}
+.section-kicker{display:inline-flex;align-items:center;gap:8px;color:var(--brand-gold);font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin-bottom:12px}
+.section-heading{max-width:760px;margin-bottom:42px}
+.section-heading.center{text-align:center;margin-left:auto;margin-right:auto}
+.section-heading h2,.story-copy h2,.approach-copy h2,.about-cta h2{margin:0;color:var(--brand-blue);font-size:clamp(2rem,4vw,3rem);line-height:1.08;letter-spacing:-.035em}
+.section-heading p,.story-copy p,.approach-copy>p{color:var(--muted);line-height:1.8;margin:16px 0 0}
+html.dark .section-heading h2,html.dark .story-copy h2,html.dark .approach-copy h2,html.dark .about-cta h2{color:var(--dark-text)}
+html.dark .section-heading p,html.dark .story-copy p,html.dark .approach-copy>p{color:var(--dark-muted)}
+
+.about-hero{background:var(--brand-blue);color:#fff;min-height:620px;display:flex;align-items:center;overflow:hidden;position:relative}
+.about-hero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 30%,rgba(212,167,44,.18),transparent 34%);pointer-events:none}
+.about-hero-inner{width:min(var(--max),calc(100% - 40px));margin:0 auto;display:grid;grid-template-columns:1.02fr .98fr;gap:60px;align-items:center;padding:78px 0}
+.about-hero-copy{position:relative;z-index:1}
+.about-hero .eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--brand-gold);font-size:.8rem;font-weight:800;text-transform:uppercase;letter-spacing:.12em;margin-bottom:18px}
+.about-hero h1{font-size:clamp(2.8rem,5.6vw,5rem);line-height:1.02;letter-spacing:-.055em;margin:0;max-width:700px}
+.about-hero h1 span{color:var(--brand-gold)}
+.about-hero p{max-width:610px;color:#dbe4e8;font-size:1.08rem;line-height:1.8;margin:22px 0 28px}
+.about-hero-actions,.cta-actions{display:flex;flex-wrap:wrap;gap:12px}
+.about-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;padding:13px 19px;font-weight:800;text-decoration:none;transition:all var(--transition)}
+.about-btn.primary{background:var(--brand-gold);border:1px solid var(--brand-gold);color:#fff}
+.about-btn.secondary{background:transparent;border:1px solid rgba(255,255,255,.55);color:#fff}
+.about-btn:hover{background:#fff;border-color:#fff;color:var(--brand-blue);transform:translateY(-2px)}
+.about-hero-visual{position:relative;min-height:420px}
+.hero-image-card{height:420px;border-radius:28px;overflow:hidden;border:1px solid rgba(255,255,255,.18);box-shadow:0 30px 70px rgba(0,0,0,.28)}
+.hero-image-card img,.story-image img,.approach-image img{width:100%;height:100%;object-fit:cover;display:block}
+.hero-float-card{position:absolute;left:-34px;bottom:28px;width:220px;padding:18px;border-radius:18px;background:var(--surface);color:var(--text);box-shadow:var(--shadow);display:grid;grid-template-columns:34px 1fr;column-gap:10px}
+.hero-float-card i{grid-row:span 2;color:var(--brand-gold);width:26px}
+.hero-float-card strong{font-size:.92rem}.hero-float-card span{font-size:.75rem;color:var(--muted);line-height:1.45}
+
+.story-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:72px;align-items:center}
+.story-image{height:510px;position:relative;border-radius:26px;overflow:visible}
+.story-image>img{border-radius:26px}
+.image-badge{position:absolute;right:-20px;bottom:28px;background:var(--brand-gold);color:#fff;border-radius:16px;padding:16px 20px;display:flex;flex-direction:column;box-shadow:var(--shadow)}
+.image-badge strong{font-size:1.1rem}.image-badge span{font-size:.75rem}
+.story-copy p{max-width:650px}
+.story-points{display:grid;gap:13px;margin-top:24px}
+.story-points div{display:flex;align-items:center;gap:10px;font-weight:700;color:var(--text)}
+.story-points i{color:var(--brand-gold);width:20px}
+html.dark .story-points div{color:var(--dark-text)}
+
+.mission-section,.values-section{background:var(--surface-alt)}
+html.dark .mission-section,html.dark .values-section{background:var(--dark-bg)}
+.mission-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.mission-card,.why-card,.value-card{background:var(--surface);border:1px solid var(--border);border-radius:22px;padding:30px;transition:all var(--transition);box-shadow:var(--shadow-soft)}
+.mission-card:hover,.why-card:hover,.value-card:hover{transform:translateY(-7px);border-color:var(--brand-gold);box-shadow:var(--shadow)}
+html.dark .mission-card,html.dark .why-card,html.dark .value-card{background:var(--dark-surface);border-color:var(--dark-border)}
+.card-icon{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;background:rgba(212,167,44,.12);color:var(--brand-gold);margin-bottom:20px}
+.card-icon svg{width:24px;height:24px}
+.mission-card h3,.why-card h3,.value-card h3{margin:0 0 10px;color:var(--brand-blue);font-size:1.18rem}
+.mission-card p,.why-card p,.value-card p{margin:0;color:var(--muted);line-height:1.7}
+html.dark .mission-card h3,html.dark .why-card h3,html.dark .value-card h3{color:var(--dark-text)}
+html.dark .mission-card p,html.dark .why-card p,html.dark .value-card p{color:var(--dark-muted)}
+
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.why-card{padding:25px}
+
+.approach-grid{display:grid;grid-template-columns:1fr .9fr;gap:70px;align-items:center}
+.approach-image{height:520px;border-radius:26px;overflow:hidden;box-shadow:var(--shadow)}
+.approach-steps{display:grid;gap:20px;margin-top:28px}
+.approach-step{display:grid;grid-template-columns:48px 1fr;gap:16px;align-items:start}
+.approach-step>span{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--brand-gold);color:var(--brand-gold);font-size:.78rem;font-weight:900}
+.approach-step h3{margin:0 0 5px;color:var(--brand-blue);font-size:1.05rem}
+.approach-step p{margin:0;color:var(--muted);line-height:1.65}
+html.dark .approach-step h3{color:var(--dark-text)}html.dark .approach-step p{color:var(--dark-muted)}
+
+.values-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+
+.about-cta{background:var(--brand-teal);color:#fff}
+.cta-inner{display:flex;justify-content:space-between;align-items:center;gap:35px}
+.about-cta h2{color:#fff;max-width:680px}.about-cta .section-kicker{margin-bottom:8px}
+.about-cta p{color:#dbe8e8;line-height:1.7;margin:12px 0 0;max-width:620px}
+.about-cta .secondary{border-color:rgba(255,255,255,.7)}
+
+html.dark .about-hero{background:#081e32}
+html.dark .about-cta{background:#0b4547}
+
+html[dir="rtl"] .about-hero-inner,html[dir="rtl"] .story-grid,html[dir="rtl"] .approach-grid{direction:rtl}
+html[dir="rtl"] .hero-float-card{left:auto;right:-34px}
+html[dir="rtl"] .story-points div{direction:rtl}
+html[dir="rtl"] .cta-inner{direction:rtl}
+
+@media(max-width:1024px){
+  .about-hero-inner{grid-template-columns:1fr;gap:38px}.about-hero{min-height:auto}.about-hero-visual{max-width:720px;width:100%;margin:auto}
+  .story-grid,.approach-grid{grid-template-columns:1fr;gap:45px}.story-image{max-width:700px;margin:auto}.approach-image{max-width:720px;width:100%;margin:auto;order:2}
+  .why-grid,.values-grid{grid-template-columns:repeat(2,1fr)}
+  .cta-inner{align-items:flex-start;flex-direction:column}
+}
+@media(max-width:768px){
+  .section-padding{padding:68px 0}.about-container,.about-hero-inner{width:min(var(--max),calc(100% - 28px))}
+  .about-hero-inner{padding:64px 0}.about-hero h1{font-size:clamp(2.45rem,12vw,4rem)}.about-hero-visual{min-height:340px}.hero-image-card{height:340px}.hero-float-card{left:12px;bottom:16px}
+  .mission-grid,.why-grid,.values-grid{grid-template-columns:1fr}.story-image{height:400px}.approach-image{height:400px}
+  .cta-actions{width:100%}.cta-actions .about-btn{flex:1}
+}
+@media(max-width:360px){
+  .section-padding{padding:55px 0}.about-container,.about-hero-inner{width:calc(100% - 22px)}
+  .about-hero-inner{padding:52px 0}.about-hero p{font-size:.98rem}.about-hero-actions,.cta-actions{flex-direction:column}.about-btn{width:100%}
+  .hero-image-card{height:300px}.hero-float-card{position:relative;left:0;bottom:auto;margin:-30px 12px 0;z-index:2;width:auto}.story-image{height:330px}.approach-image{height:330px}
+}
